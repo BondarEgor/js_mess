@@ -1,0 +1,26 @@
+.button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+.button:active {
+  opacity: 0.4;
+}
+
+.primary {
+  background-color: #000;
+  color: white;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #000;
+}

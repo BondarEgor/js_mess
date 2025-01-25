@@ -1,0 +1,13 @@
+.link {
+  color: #929191;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:active {
+  opacity: 0.5;
+}
