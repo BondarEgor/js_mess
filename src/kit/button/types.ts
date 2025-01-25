@@ -2,13 +2,11 @@ import { ButtonHTMLAttributes } from "react";
 
 export type ButtonSize = "l" | "m" | "s" | "xs";
 
-export type ButtonAppearance = "primary" | "secondary";
+export type ButtonAppearance = "black" | "grey" | "white" | "orange";
 
-export type ButtonDesktopProps = {
+export type ButtonProps = {
   label?: string;
   wide?: boolean;
   size?: ButtonSize;
   appearance?: ButtonAppearance;
-  onClick?: ButtonHTMLAttributes<HTMLElement>["onClick"];
-  type?: ButtonHTMLAttributes<HTMLElement>["type"];
-};
+} & ButtonHTMLAttributes<HTMLElement>;

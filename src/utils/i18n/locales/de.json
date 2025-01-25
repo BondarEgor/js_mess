@@ -1,0 +1,35 @@
+{
+  "registerScreen": {
+    "title": "Erstellen Sie Ihr Konto",
+    "subtitle": "Treten Sie uns bei und verbinden Sie sich in Sekundenschnelle mit Menschen auf der ganzen Welt",
+    "placeholder": {
+      "email": "E-Mail",
+      "login": "Benutzername",
+      "password": "Passwort"
+    },
+    "submitBtn": "Absenden",
+    "alreadyHaveAcc": "Haben Sie bereits ein Konto?",
+    "loginLink": "Anmelden"
+  },
+  "loginScreen": {
+    "title": "Willkommen zurück",
+    "subtitle": "Setzen Sie das Gespräch dort fort, wo Sie aufgehört haben",
+    "placeholder": {
+      "login": "Benutzername",
+      "password": "Passwort"
+    },
+    "forgotPassword": "Passwort vergessen?",
+    "submitBtn": "Anmelden",
+    "noAccount": "Noch kein Konto?",
+    "registerLink": "Registrieren"
+  },
+  "forgotPasswordScreen": {
+    "title": "Passwort vergessen?",
+    "subtitle": "Kein Problem, wir senden Ihnen eine Anleitung zur Passwortzurücksetzung",
+    "placeholder": {
+      "email": "Geben Sie Ihre E-Mail ein"
+    },
+    "resetBtn": "Passwort zurücksetzen",
+    "backToLoginLink": "Zurück zum Login"
+  }
+}

@@ -1,26 +1,63 @@
-.button {
-  width: 100%;
+.root {
   padding: 0.75rem 1rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   cursor: pointer;
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.button:hover {
-  opacity: 0.7;
-}
-.button:active {
-  opacity: 0.4;
-}
+  &._wide {
+    flex: 1;
+  }
 
-.primary {
-  background-color: #000;
-  color: white;
-}
+  &.grey {
+    background-color: var(--color-grey);
+    color: var(--color-white);
 
-.secondary {
-  background-color: #fff;
-  color: #000;
+    &:hover {
+      background-color: var(--color-grey-hover);
+    }
+
+    &:active {
+      background-color: var(--color-grey-active);
+    }
+  }
+
+  &.orange {
+    background-color: var(--color-orange);
+    color: var(--color-black);
+
+    &:hover {
+      background-color: var(--color-orange-hover);
+    }
+    &:active {
+      background-color: var(--color-orange-active);
+    }
+  }
+
+  &.white {
+    background-color: var(--color-white);
+    color: var(--color-black);
+
+    &:hover {
+      background-color: var(--color-white-hover);
+    }
+    &:active {
+      background-color: var(--color-white-active);
+    }
+  }
+
+  &.black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-black-hover);
+    }
+    &:active {
+      background-color: var(--color-black-active);
+    }
+  }
 }

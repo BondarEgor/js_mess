@@ -1,24 +1,26 @@
 import React from "react";
-import { UseFormRegisterReturn } from "react-hook-form";
-import classes from "./input.module.css";
 
-interface IInputProps {
-  placeholder: string;
-  type: string;
-  register: UseFormRegisterReturn;
-}
+import styles from "./input.module.css";
+import { IInputProps } from "./types";
 
 export const Input: React.FC<IInputProps> = ({
   placeholder,
-  type,
   register,
+  errorMessage,
 }) => {
   return (
+    <>
       <input
+        id={register?.name}
         {...register}
         placeholder={placeholder}
-        type={type}
-        className={classes.input}
+        className={styles.input}
       />
+      {errorMessage && (
+        <label htmlFor={register?.name} className="errorText">
+          {errorMessage.message}
+        </label>
+      )}
+    </>
   );
 };

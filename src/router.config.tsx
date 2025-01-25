@@ -1,24 +1,29 @@
 import { RouteObject } from "react-router-dom";
+
 import App from "./App";
-import { UserRegistration } from "./screens/UserRegistration";
-import { UserAuth } from "./screens/UserAuth";
-import { ForgetPassword } from "./screens/ForgetPassword";
+import { RegisterPage } from "./screens/RegisterPage";
+import { LoginPage } from "./screens/LoginPage";
+import { ForgetPassword } from "./screens/ForgotPassword";
 
 export const routes: RouteObject[] = [
   {
-    path: "",
+    path: "/",
     element: <App />,
   },
   {
-    path: "registration",
-    element: <UserRegistration />,
+    path: "register",
+    element: <RegisterPage />,
   },
   {
     path: "auth",
-    element: <UserAuth />,
+    element: <LoginPage />,
   },
   {
-    path: "forget-password",
+    path: "recovery",
     element: <ForgetPassword />,
+  },
+  {
+    path: "*",
+    element: <div>Implement a 404 page</div>,
   },
 ];

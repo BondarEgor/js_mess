@@ -1,0 +1,38 @@
+{
+  "errorMessage": {
+    "email": ""
+  },
+  "registerScreen": {
+    "title": "Create Your Account",
+    "subtitle": "Join us and start connecting with people around the world in seconds",
+    "placeholder": {
+      "email": "Email",
+      "login": "Login",
+      "password": "Password"
+    },
+    "submitBtn": "Submit",
+    "alreadyHaveAcc": "Already have an acoount?",
+    "loginLink": "Log in"
+  },
+  "loginScreen": {
+    "title": "Welcome back",
+    "subtitle": "Pick up the conversation where you left it",
+    "placeholder": {
+      "login": "Login",
+      "password": "Password"
+    },
+    "forgotPassword": "Forgot password?",
+    "submitBtn": "Login",
+    "noAccount": "Don't have an account yet?",
+    "registerLink": "Register"
+  },
+  "forgotPasswordScreen": {
+    "title": "Forgot password?",
+    "subtitle": "No worries we'll send you reset instruction",
+    "placeholder": {
+      "email": "Enter your email"
+    },
+    "resetBtn": "Reset password",
+    "backToLoginLink": "Back to login"
+  }
+}

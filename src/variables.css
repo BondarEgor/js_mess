@@ -1,0 +1,22 @@
+:root {
+  --color-black: #000000;
+  --color-black-hover: #333333;
+  --color-black-active: #1a1a1a;
+
+  --color-grey: #808080;
+  --color-grey-hover: #999999;
+  --color-grey-active: #666666;
+
+  --color-white: #ffffff;
+  --color-white-hover: #f1f1f1;
+  --color-white-active: #e0e0e0;
+
+  --color-orange: #ffa500;
+  --color-orange-hover: #ff9d00;
+  --color-orange-active: #e68900;
+
+  --color-error: #d32f2f;
+
+  --bg-white: #ffffff;
+  --bg-grey: #d4d4d4;
+}

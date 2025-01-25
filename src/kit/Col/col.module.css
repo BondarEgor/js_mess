@@ -1,0 +1,20 @@
+.col {
+  display: flex;
+  flex-direction: column;
+
+  &.size_s {
+    gap: 0.5rem;
+  }
+
+  &.size_m {
+    gap: 0.75rem;
+  }
+
+  &.size_l {
+    gap: 1rem;
+  }
+  
+  &.size_xl {
+    gap: 1.25rem;
+  }
+}
