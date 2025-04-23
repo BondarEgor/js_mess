@@ -1,29 +1,13 @@
-import { FieldValues, useForm, UseFormReturn } from "react-hook-form";
-import styles from "./form.module.css";
-import { createContext, ReactNode } from "react";
+import { FormProvider, useForm } from "react-hook-form";
 
-interface IFormWrapperProps<T extends FieldValues> {
-  children: ReactNode;
-  onSubmit: (data: T) => void;
-}
+import { IFormCustom } from "./types";
 
-interface FormContextType<T extends FieldValues> {
-  form: UseFormReturn<T>;
-}
-
-const FormContext = createContext<FormContextType<any> | null>(null);
-
-export const FormWrapper = <T extends FieldValues>({
-  children,
-  onSubmit,
-}: IFormWrapperProps<T>) => {
-  const form = useForm<T>({ mode: "onSubmit" });
+export const FormCustom: React.FC<IFormCustom> = ({ children }) => {
+  const methods = useForm();
 
   return (
-    <FormContext.Provider value={{ form }}>
-      <form className={styles.form} onSubmit={form.handleSubmit(onSubmit)}>
-        {children}
-      </form>
-    </FormContext.Provider>
+    <FormProvider {...methods}>
+      <form>{children}</form>
+    </FormProvider>
   );
 };

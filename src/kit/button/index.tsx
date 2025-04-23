@@ -1,18 +1,19 @@
 import React from "react";
-import { ButtonDesktopProps } from "./types";
+import { ButtonProps } from "./types";
 import cn from "classnames";
 import styles from "./button.module.css";
 
-export const Button: React.FC<ButtonDesktopProps> = ({
+export const Button: React.FC<ButtonProps> = ({
   label,
-  appearance,
+  appearance = "primary",
+  size = "m",
+  wide,
   ...restProps
 }) => {
   return (
     <button
-      className={cn(styles.button, {
-        [styles.primary]: appearance === "primary",
-        [styles.secondary]: appearance === "secondary",
+      className={cn(styles.root, styles[appearance], styles[size], {
+        [styles._wide]: wide,
       })}
       {...restProps}
     >

@@ -1,4 +1,11 @@
-export const formValidationRules = {
+export const formConfig = {
+  login: {
+    required: "Login is required",
+    minLength: {
+      value: 5,
+      message: "Login must be at least 5 characters long",
+    },
+  },
   email: {
     required: "Email is required",
     pattern: {

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @import "./common.css";
+@import "./variables.css";
+
 *,
 *::before,
 *::after {
@@ -11,13 +13,35 @@
   padding: 0;
 }
 
+html {
+  min-height: 100vh;
+  display: flex;
+}
+
 body {
-  height: 100%;
+  display: flex;
+  flex: 1;
   scroll-behavior: smooth;
   font-family: "Geist", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Два селектора ниже нужны для отображения фрейма сторибука во весь рост */
+.sb-main-fullscreen.sb-show-main {
+  display: flex;
+}
+
+#storybook-root {
+  display: flex;
+  flex: 1;
 }
 
 ul[role="list"],

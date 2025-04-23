@@ -1,0 +1,11 @@
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

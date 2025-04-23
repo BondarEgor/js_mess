@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  flex-direction: row;
+
+  &.s {
+    gap: 0.5rem;
+  }
+  &.m {
+    gap: 0.75rem;
+  }
+  &.l {
+    gap: 1rem;
+  }
+  &.xl {
+    gap: 1.25rem;
+  }
+}

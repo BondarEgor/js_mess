@@ -1,0 +1,32 @@
+name: Messenger_CI
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["master"]
+  workflow_dispatch:
+
+jobs:
+  build_and_test:
+    name: Build & Test project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: .
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.20.4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Run tests
+        run: npm run test

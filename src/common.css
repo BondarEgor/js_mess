@@ -1,13 +1,18 @@
 .link {
-  color: #929191;
+  color: var(--color-grey);
   text-decoration: underline;
   text-underline-offset: 4px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--color-grey-hover);
+  }
+  &:active {
+    color: var(--color-grey-active);
+  }
 }
 
-.link:hover {
-  opacity: 0.8;
-}
-
-.link:active {
-  opacity: 0.5;
+/* Error message in forms */
+.errorText {
+  color: var(--color-error);
 }

@@ -1,0 +1,35 @@
+{
+  "registerScreen": {
+    "title": "Créez Votre Compte",
+    "subtitle": "Rejoignez-nous et commencez à connecter avec des gens partout dans le monde en quelques secondes",
+    "placeholder": {
+      "email": "Email",
+      "login": "Identifiant",
+      "password": "Mot de passe"
+    },
+    "submitBtn": "Envoyer",
+    "alreadyHaveAcc": "Vous avez déjà un compte ?",
+    "loginLink": "Connectez-vous"
+  },
+  "loginScreen": {
+    "title": "Bon retour",
+    "subtitle": "Reprenez la conversation là où vous l'avez laissée",
+    "placeholder": {
+      "login": "Identifiant",
+      "password": "Mot de passe"
+    },
+    "forgotPassword": "Mot de passe oublié ?",
+    "submitBtn": "Connexion",
+    "noAccount": "Vous n'avez pas encore de compte ?",
+    "registerLink": "S'inscrire"
+  },
+  "forgotPasswordScreen": {
+    "title": "Mot de passe oublié ?",
+    "subtitle": "Pas de souci, nous vous enverrons les instructions de réinitialisation",
+    "placeholder": {
+      "email": "Entrez votre email"
+    },
+    "resetBtn": "Réinitialiser le mot de passe",
+    "backToLoginLink": "Retour à la connexion"
+  }
+}
